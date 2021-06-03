@@ -1,17 +1,17 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <header className="row">
       <div>
-        <a className="brand" href="/">
+        <Link className="brand" to="/">
           amazona
-        </a>
+        </Link>
       </div>
       <div>
-        <a href="/cart">Cart</a>
-        <a href="/signin">Sign In</a>
+        <Link to="/cart">Cart</Link>
+        <Link to="/signin">Sign In</Link>
       </div>
     </header>
   );
